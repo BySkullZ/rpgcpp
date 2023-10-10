@@ -42,7 +42,11 @@ public:
 		}
 	}
 
-	void Attack() {}
+	void Attack() {
+		system("CLS");
+
+		std::cout << "40 DMG. IT WAS VERY EFFECTIVE !" << std::endl;
+	}
 
 	void DisplaySkills() {
 		system("CLS");
@@ -63,11 +67,14 @@ public:
 
 	void DisplayItems() {
 		system("CLS");
-		std::cout << "YOUR SKILLS:" << std::endl;
-		std::cout << "1. TORNADO" << std::endl;
-		std::cout << "2. WHIRLWIND" << std::endl;
+		std::cout << "YOUR ITEMS:" << std::endl;
+		std::cout << "1. APPLE x4" << std::endl;
+		std::cout << "2. JUICE x9" << std::endl;
 	}
 
-	void Escape() {}
+	void Escape() {
+		system("CLS");
+		std::cout << "YOU ESCAPED !" << std::endl;
+	}
 
 };
