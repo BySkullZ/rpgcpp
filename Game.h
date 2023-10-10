@@ -3,7 +3,23 @@
 class Game {
 public:
 	void StartGame() {
-		DisplayCombatSelection();
+
+		std::cout << "WELCOME TO PROJECT RPGCPP" << std::endl;
+
+		std::cout << "1. NEW SAVE" << std::endl;
+		std::cout << "2. CONTINUE" << std::endl;
+		std::cout << "3. EXIT" << std::endl;
+
+		int Choice = MenuSelect(1, 3);
+
+		switch (Choice) {
+			case 1:
+				DisplayCombatSelection();
+			case 2:
+				DisplayCombatSelection();
+			case 3:
+				return;
+		}
 	}
 
 	int MenuSelect(int min, int max) {
